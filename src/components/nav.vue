@@ -22,8 +22,14 @@ nav {
         padding: 0 25px;
         height: 40px;
         line-height: 40px;
+        font-size: 14px;
         transition: all 0.6s;
         color: #838383;
+        i {
+          font-size: 22px;
+          margin-right: 14px;
+          vertical-align: -3px;
+        }
       }
       a:hover {
         color: #424242;
@@ -33,8 +39,9 @@ nav {
   }
 }
 .router-link-exact-active {
-    color: #ae2b34;
-    background: #f9e5e5 !important;
+  color: #ae2b34;
+  background: #f9e5e5 !important;
+  font-weight: 600;
 }
 </style>
 
@@ -43,7 +50,10 @@ nav {
     <img alt="logo" src="../assets/logo.png" />
     <ul>
       <li v-for="item in items" v-bind:key="item.id">
-        <router-link v-text="item.name" :to="item.url"></router-link>
+        <router-link :to="item.url">
+          <i class="fa" :class="item.icon"></i>
+          <span v-text="item.name"></span>
+        </router-link>
       </li>
     </ul>
     <p class="end">剩余容量 1.2TB</p>
@@ -57,16 +67,16 @@ export default {
     return {
       count: 0,
       items: [
-        { id: "0", name: "新闻(news)", url: "/news" },
-        { id: "1", name: "团队(team)", url: "/contact" },
-        { id: "2", name: "文件(file)", url: "/file" },
-        { id: "3", name: "记录(note)", url: "/note" },
-        { id: "4", name: "文档(word)", url: "/word" },
-        { id: "5", name: "文集(wiki)", url: "/wiki" },
-        { id: "6", name: "其他", url: "/other" },
-        { id: "7", name: "我的收藏", url: "/mark" },
-        { id: "8", name: "我的分享", url: "/shared" },
-        { id: "9", name: "回收站", url: "/recycling" }
+        { id: "0", name: "新闻(news)", icon:"fa-file", url: "/news" },
+        { id: "1", name: "团队(team)", icon:"fa-sticky-note", url: "/contact" },
+        { id: "3", name: "笔记(note)", icon:"fa-quote-right", url: "/note" },
+        { id: "4", name: "文档(word)", icon:"fa-code", url: "/word" },
+        { id: "5", name: "文集(wiki)", icon:"fa-sticky-note", url: "/wiki" }
+        //{ id: "2", name: "文件(file)", url: "/file" },
+        //{ id: "6", name: "其他", url: "/other" },
+        //{ id: "7", name: "我的收藏", url: "/mark" },
+        //{ id: "8", name: "我的分享", url: "/shared" },
+        //{ id: "9", name: "回收站", url: "/recycling" }
         /* 照片 影片 图像 矢量 CAD 3D模型 */
       ]
     };

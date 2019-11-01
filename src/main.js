@@ -16,7 +16,7 @@ const router = new VueRouter({
     { path: '/note', component: () => import('./components/note.vue')},
     { path: '/file', component: () => import('./components/file.vue')},
     { path: '/word', component: () => import('./components/word.vue')},
-    { path: '/wiki', component: () => import('./components/wiki.vue')},
+    { path: '/wiki', component: () => import('./components/wiki/list.vue')},
   ]
 })
 

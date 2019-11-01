@@ -5,6 +5,7 @@
         line-height: 64px;
         color: #ffffff;
         background: #e11d2a;
+        user-select: none;
     }
     div a {
         line-height: 64px;
@@ -14,7 +15,7 @@
 </style>
 <template>
     <div>
-        <router-link to="/contact">contact</router-link>
-        <router-link to="/helloworld">Go to Bar</router-link>
+        <router-link to="/contact">云文件</router-link>
+        <router-link to="/helloworld">广场</router-link>
     </div>
 </template>

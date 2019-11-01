@@ -7,6 +7,7 @@ nav {
   font-size: 14px;
   display: flex;
   flex-direction: column;
+  user-select: none;
   img {
     width: 84px;
     margin: 15px auto;

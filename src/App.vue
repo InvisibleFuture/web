@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <header>
-      <webheader></webheader>
-    </header>
+    <webheader></webheader>
     <main>
       <webnav></webnav>
       <transition name="fade" mode="out-in">
@@ -22,16 +20,34 @@ export default {
 };
 </script>
 
-<style>
+<style lang="less">
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #f6f6f6;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #747474;
+}
+::-webkit-scrollbar-corner {
+  background: #f6f6f6;
+}
 html,
 body {
   padding: 0;
   margin: 0;
   width: 100%;
   height: 100%;
-}
-a {
-  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
 }
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
@@ -39,9 +55,9 @@ a {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   background: #f1f1f1;
-  flex-direction: column;
   height: 100%;
   display: flex;
+  flex-direction: column;
 }
 main {
   height: 100%;

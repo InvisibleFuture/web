@@ -1,11 +1,11 @@
 <style lang="less" scoped>
 .node {
-  width: 200px;
+  width: 300px;
   //background: #f2f2f2;
   text-align: left;
   > ul {
     list-style: none;
-    padding: 0;
+    padding: 10px;
     margin: 0;
   }
 }

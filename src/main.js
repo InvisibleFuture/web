@@ -13,9 +13,9 @@ const router = new VueRouter({
     { path: '/helloworld', component: () => import('./components/HelloWorld.vue')},
     { path: '/contact', component: () => import('./components/contact.vue')},
     { path: '/news', component: () => import('./components/news.vue')},
-    { path: '/note', component: () => import('./components/note.vue')},
+    { path: '/note', component: () => import('./components/note/list.vue')},
     { path: '/file', component: () => import('./components/file.vue')},
-    { path: '/word', component: () => import('./components/word.vue')},
+    { path: '/word', component: () => import('./components/word/list.vue')},
     { path: '/wiki', component: () => import('./components/wiki/list.vue')},
   ]
 })

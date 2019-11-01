@@ -70,24 +70,24 @@ export default {
       list: [
         {
           id: "1",
-          name: "啊啊啊阿斯顿发阿斯顿发",
-          username: "冯艳艳",
+          name: "特朗普弹劾调查",
+          username: "Last",
           time: "20190204",
           discuss: "12",
           view: "22"
         },
         {
           id: "2",
-          name: "啊啊啊阿斯顿发阿斯顿发",
-          username: "冯艳艳",
+          name: "三季报窗口期刚过 多家上市公司披露减持计划",
+          username: "Last",
           time: "20190204",
           discuss: "12",
           view: "22"
         },
         {
           id: "3",
-          name: "啊啊啊阿斯顿发阿斯顿发",
-          username: "冯艳艳",
+          name: "兴业投资：空头继续掌控，油价四连跌",
+          username: "Last",
           time: "20190204",
           discuss: "12",
           view: "22"

@@ -5,9 +5,11 @@ nav {
   border-right: 1px solid #e8e8e8;
   background: #fbfbfb;
   font-size: 14px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   user-select: none;
+  overflow: auto;
   img {
     width: 84px;
     margin: 15px auto;
@@ -44,6 +46,26 @@ nav {
   background: #f9e5e5 !important;
   font-weight: 600;
 }
+.storage {
+  padding: 14px;
+  .disk {
+    height: 10px;
+    background: #c3c3c3;
+    border-radius: 5px;
+    overflow: hidden;
+    .v {
+      height: 100%;
+      width: 30%;
+      background: #ae2b34;
+    }
+  }
+  p {
+    a {
+      color: #ae2b34;
+      float: right;
+    }
+  }
+}
 </style>
 
 <template>
@@ -57,7 +79,15 @@ nav {
         </router-link>
       </li>
     </ul>
-    <p class="end">剩余容量 1.2TB</p>
+    <div class="storage">
+      <div class="disk">
+        <div class="v"></div>
+      </div>
+      <p>
+        <span>11.3GB/1024PB</span>
+        <a href="#">扩容</a>
+      </p>
+    </div>
   </nav>
 </template>
 
@@ -68,11 +98,11 @@ export default {
     return {
       count: 0,
       items: [
-        { id: "0", name: "新闻(news)", icon:"fa-file", url: "/news" },
-        { id: "1", name: "团队(team)", icon:"fa-sticky-note", url: "/contact" },
-        { id: "3", name: "笔记(note)", icon:"fa-quote-right", url: "/note" },
-        { id: "4", name: "文档(word)", icon:"fa-code", url: "/word" },
-        { id: "5", name: "文集(wiki)", icon:"fa-sticky-note", url: "/wiki" }
+        { id: "0", name: "新闻(news)", icon: "fa-envelope-open", url: "/news" },
+        { id: "1", name: "团队(team)", icon: "fa-users", url: "/contact" },
+        { id: "3", name: "笔记(note)", icon: "fa-sticky-note", url: "/note" },
+        { id: "5", name: "文集(wiki)", icon: "fa-book", url: "/wiki" },
+        { id: "4", name: "文档(word)", icon: "fa-file", url: "/word" }
         //{ id: "2", name: "文件(file)", url: "/file" },
         //{ id: "6", name: "其他", url: "/other" },
         //{ id: "7", name: "我的收藏", url: "/mark" },

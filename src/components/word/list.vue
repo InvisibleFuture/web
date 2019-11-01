@@ -71,7 +71,7 @@ export default {
         {
           id: "1",
           name: "啊啊啊阿斯顿发阿斯顿发",
-          username: "冯艳艳",
+          username: "觉",
           time: "20190204",
           discuss: "12",
           view: "22"
@@ -79,7 +79,7 @@ export default {
         {
           id: "2",
           name: "啊啊啊阿斯顿发阿斯顿发",
-          username: "冯艳艳",
+          username: "觉",
           time: "20190204",
           discuss: "12",
           view: "22"
@@ -87,7 +87,7 @@ export default {
         {
           id: "3",
           name: "啊啊啊阿斯顿发阿斯顿发",
-          username: "冯艳艳",
+          username: "觉",
           time: "20190204",
           discuss: "12",
           view: "22"

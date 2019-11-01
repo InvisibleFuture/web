@@ -1,8 +1,10 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
 .contact {
-  padding: 20px 32px;
   width: 100%;
+  display: flex;
+  overflow: auto;
+  padding: 20px 32px;
   ul {
     list-style-type: none;
     padding: 0;
@@ -50,7 +52,7 @@
           </tr>
           <tr v-for="user in group.children" v-bind:key="user.id">
             <td>
-              <img src="../assets/logo.png" />
+              <img src="../assets/-4fb6-91e4-25182fc5c8e2.jpg" />
             </td>
             <td v-text="user.name"></td>
             <td v-text="user.email"></td>

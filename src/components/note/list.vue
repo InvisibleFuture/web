@@ -2,6 +2,7 @@
 .note {
   padding: 20px 32px;
   width: 100%;
+  overflow: auto;
   .create {
     height: 50px;
     line-height: 50px;
@@ -73,22 +74,13 @@
     <!-- 记事本列表 -->
     <ul>
       <li v-for="item in list" v-bind:key="item.id">
-        <img alt="logo" src="../assets/logo.png" />
+        <img alt="logo" src="../../assets/70914.png" />
         <div>
-          <h5>一个记事本</h5>
+          <h5 v-text="item.name"></h5>
           <p>哦哈哈哈 这是一个记事本</p>
         </div>
       </li>
     </ul>
-    <table>
-      <tr v-for="item in list" v-bind:key="item.id">
-        <td v-text="item.name"></td>
-        <td v-text="item.username"></td>
-        <td v-text="item.time"></td>
-        <td v-text="item.discuss"></td>
-        <td v-text="item.view"></td>
-      </tr>
-    </table>
   </div>
 </template>
 
@@ -100,24 +92,24 @@ export default {
       list: [
         {
           id: "1",
-          name: "啊啊啊阿斯顿发阿斯顿发",
-          username: "冯艳艳",
+          name: "一个记事本",
+          username: "Last",
           time: "20190204",
           discuss: "12",
           view: "22"
         },
         {
           id: "2",
-          name: "啊啊啊阿斯顿发阿斯顿发",
-          username: "冯艳艳",
+          name: "开发计划",
+          username: "觉",
           time: "20190204",
           discuss: "12",
           view: "22"
         },
         {
           id: "3",
-          name: "啊啊啊阿斯顿发阿斯顿发",
-          username: "冯艳艳",
+          name: "关于接口原则",
+          username: "Last",
           time: "20190204",
           discuss: "12",
           view: "22"

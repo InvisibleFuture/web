@@ -1,12 +1,9 @@
 <template>
   <div id="app">
     <webheader></webheader>
-    <main>
-      <webnav></webnav>
-      <transition name="fade" mode="out-in">
-        <router-view></router-view>
-      </transition>
-    </main>
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
@@ -14,8 +11,8 @@
 export default {
   name: "app",
   components: {
-    webheader: () => import("./components/header.vue"),
-    webnav: () => import("./components/nav.vue")
+    webheader: () => import("./components/header.vue")
+    //webnav: () => import("./components/nav.vue")
   }
 };
 </script>
@@ -59,12 +56,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-main {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-}
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s;

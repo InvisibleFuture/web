@@ -57,6 +57,12 @@ nav {
       height: 100%;
       width: 30%;
       background: #ae2b34;
+      transition: all 0.6s;
+    }
+  }
+  .disk:hover {
+    .v {
+      background: #ce2b34;
     }
   }
   p {
@@ -98,11 +104,12 @@ export default {
     return {
       count: 0,
       items: [
-        { id: "0", name: "新闻(news)", icon: "fa-envelope-open", url: "/news" },
-        { id: "1", name: "团队(team)", icon: "fa-users", url: "/contact" },
-        { id: "3", name: "笔记(note)", icon: "fa-sticky-note", url: "/note" },
-        { id: "5", name: "文集(wiki)", icon: "fa-book", url: "/wiki" },
-        { id: "4", name: "文档(word)", icon: "fa-file", url: "/word" }
+        { id: "0", name: "新闻(news)", icon: "fa-envelope-open", url: "/cloud/news" },
+        { id: "1", name: "团队(team)", icon: "fa-users", url: "/cloud/contact" },
+        { id: "3", name: "笔记(note)", icon: "fa-sticky-note", url: "/cloud/note" },
+        { id: "5", name: "文集(wiki)", icon: "fa-book", url: "/cloud/wiki" },
+        { id: "4", name: "文档(word)", icon: "fa-file", url: "/cloud/word" },
+        { id: "6", name: "图像(image)", icon: "fa-image", url: "/cloud/image" },
         //{ id: "2", name: "文件(file)", url: "/file" },
         //{ id: "6", name: "其他", url: "/other" },
         //{ id: "7", name: "我的收藏", url: "/mark" },

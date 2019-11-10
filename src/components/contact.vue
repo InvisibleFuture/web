@@ -6,7 +6,8 @@
   overflow: auto;
   padding: 20px 32px;
   ul {
-    list-style-type: none;
+    width: 100%;
+    list-style: none;
     padding: 0;
     li {
       margin: 0 10px;
